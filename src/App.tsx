@@ -4,6 +4,12 @@ import { GlobalStyle } from '../src/assets/styles/Global.style';
 import Card from './component/Card.component';
 import Footer from './component/Footer.component';
 
+interface AlertType {
+  show: boolean;
+  msg: string;
+  type: string;
+}
+
 function App() {
   const [quote, setQuote] = useState<string>(
     "It is easy to sit up and take notice, what's difficult is getting up and taking action."
@@ -11,7 +17,11 @@ function App() {
   const [adviceNumber, setAdviceNumber] = useState<number>(117);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<boolean>(false);
-  const [alert, setAlert] = useState<any>({ show: false, msg: '', type: '' });
+  const [alert, setAlert] = useState<AlertType>({
+    show: false,
+    msg: '',
+    type: '',
+  });
 
   const adviceUrl = 'https://api.adviceslip.com/advice';
 
