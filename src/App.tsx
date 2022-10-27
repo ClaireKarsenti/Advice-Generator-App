@@ -10,6 +10,8 @@ function App() {
   );
   const [adviceNumber, setAdviceNumber] = useState<number>(117);
   const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState<boolean>(false);
+  const [alert, setAlert] = useState<any>({ show: false, msg: '', type: '' });
 
   const adviceUrl = 'https://api.adviceslip.com/advice';
 
@@ -22,15 +24,26 @@ function App() {
   const getAdvice = async () => {
     try {
       setLoading(true);
-      await asyncTimeout(500);
-      const data = await fetch(adviceUrl);
+      await asyncTimeout(1000);
+      const data = await fetch(adviceUrl, { cache: 'no-cache' });
       const advice = await data.json();
       setLoading(false);
       setQuote(advice.slip.advice);
       setAdviceNumber(advice.slip.id);
     } catch (error) {
+      setError(true);
+      showAlert(
+        true,
+        'alert',
+        'There was an error retrieiving advice, please try again.'
+      );
       console.log(error);
     }
+  };
+
+  //Display an alert if the advice is not available
+  const showAlert = (show = false, type = '', msg = '') => {
+    setAlert({ show, type, msg });
   };
 
   useEffect(() => {
@@ -45,6 +58,9 @@ function App() {
         adviceNumber={adviceNumber}
         getAdvice={getAdvice}
         loading={loading}
+        error={error}
+        alert={alert}
+        showAlert={showAlert}
       />
       <Footer />
     </>

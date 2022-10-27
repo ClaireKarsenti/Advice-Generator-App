@@ -23,6 +23,5 @@ export const GlobalStyle = createGlobalStyle`
             justify-content: center;
             text-align: center;
             min-height: 100vh;
-            padding: 0 1.5rem;
             font-family: 'Manrope', sans-serif;
         }`;

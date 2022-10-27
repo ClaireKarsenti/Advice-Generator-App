@@ -62,7 +62,7 @@ export const Container = styled.div`
       opacity: 1;
     }
   }
-  button .loading {
+  button img.loading {
     animation: rotation 1s infinite linear;
     @keyframes rotation {
       from {
