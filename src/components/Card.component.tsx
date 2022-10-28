@@ -4,7 +4,7 @@ import { Container } from '../assets/styles/Card.style';
 import Dice from '../assets/images/icon-dice.svg';
 import Desktop from '../assets/images/pattern-divider-desktop.svg';
 import Mobile from '../assets/images/pattern-divider-mobile.svg';
-import Alert from '../component/Alert.component';
+import Alert from './Alert.component';
 
 interface CardType {
   advice: string;

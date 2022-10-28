@@ -24,4 +24,19 @@ export const GlobalStyle = createGlobalStyle`
             text-align: center;
             min-height: 100vh;
             font-family: 'Manrope', sans-serif;
+        }
+        
+        /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+        @media (prefers-reduced-motion: reduce) {
+        html:focus-within {
+            scroll-behavior: auto;
+        }
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+            }
         }`;

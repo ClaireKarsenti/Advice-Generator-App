@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { GlobalStyle } from '../src/assets/styles/Global.style';
 
-import Card from './component/Card.component';
-import Footer from './component/Footer.component';
+import Card from './components/Card.component';
+import Footer from './components/Footer.component';
 
 interface AlertType {
   show: boolean;

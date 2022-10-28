@@ -4,21 +4,36 @@ export const Container = styled.div`
   border-radius: 0.7rem;
   padding: 3em 1.5em;
   height: 23em;
-  width: 23em;
+  width: 25em;
   background: var(--dark-grayish-blue);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  animation: animate-roll 2s ease-out;
+  @keyframes animate-roll {
+    0% {
+      opacity: 0;
+      transform: scale(0, 0) rotate(360deg);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1, 1) rotate(0deg);
+    }
+  }
+  @media screen and (prefers-reduced-motion: reduce) {
+    animation: none !important;
+  }
   @media (min-width: 768px) {
-    width: 30em;
+    height: 21em;
+    width: 36em;
+    padding: 3em 3.5em;
   }
   span {
     color: var(--neon-green);
     text-transform: uppercase;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.4em;
     font: var(--fw) 12px 'Manrope', sans-serif;
   }
   q {
@@ -38,6 +53,8 @@ export const Container = styled.div`
     padding: 1.5rem;
     background-color: var(--neon-green);
     border-radius: 50%;
+    width: 6em;
+    height: 6em;
     border: none;
     outline: none;
     position: absolute;
@@ -61,6 +78,10 @@ export const Container = styled.div`
     &:hover::after {
       opacity: 1;
     }
+  }
+  button img {
+    width: 100%;
+    height: 100%;
   }
   button img.loading {
     animation: rotation 1s infinite linear;
