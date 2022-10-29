@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.div`
   border-radius: 0.7rem;
   padding: 3em 1.5em;
-  height: 23em;
-  width: 25em;
+  height: 20em;
+  width: 22em;
   background: var(--dark-grayish-blue);
   display: flex;
   flex-direction: column;
@@ -63,20 +63,23 @@ export const Container = styled.div`
     transform: translateX(-50%);
     cursor: pointer;
     transition: box-shadow 0.3s ease-in-out;
-    &::after {
-      content: '';
-      position: absolute;
-      border-radius: 50%;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      opacity: 0;
-      box-shadow: 0 0 2em 0.5em var(--neon-green);
-      transition: opacity 0.3s linear;
-    }
-    &:hover::after {
-      opacity: 1;
+    @media (hover: hover) {
+      /* Targets devices that can hover */
+      &::after {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        box-shadow: 0 0 2em 0.5em var(--neon-green);
+        transition: opacity 0.3s linear;
+      }
+      &:hover::after {
+        opacity: 1;
+      }
     }
   }
   button img {
