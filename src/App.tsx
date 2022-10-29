@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { GlobalStyle } from '../src/assets/styles/Global.style';
 
 import Card from './components/Card.component';
@@ -55,10 +55,6 @@ function App() {
   const showAlert = (show = false, type = '', msg = '') => {
     setAlert({ show, type, msg });
   };
-
-  useEffect(() => {
-    getAdvice();
-  }, []);
 
   return (
     <>
