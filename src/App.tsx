@@ -45,7 +45,7 @@ function App() {
       showAlert(
         true,
         'alert',
-        'There was an error retrieiving advice, please try again.'
+        'There was an error retrieving advice, please try again.'
       );
       console.log(error);
     }
