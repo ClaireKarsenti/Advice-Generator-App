@@ -17,6 +17,7 @@ Frontend Mentor challenges help me improve my coding skills by building realisti
   - [My process](#my-process)
     - [Built with](#built-with)
     - [What I deepened](#what-i-deepened)
+  - [Setup](#setup)
   - [Author](#author)
 
 ## Overview
@@ -156,6 +157,14 @@ Here are some example of the custom features I added to this project:
     }
   }
   ```
+
+## Setup
+
+To run this project, install it locally using yarn:
+
+```
+yarn add && yarn start
+```
 
 ## Author
 
