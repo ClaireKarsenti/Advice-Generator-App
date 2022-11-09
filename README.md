@@ -168,7 +168,7 @@ Here are some example of the custom features I added to this project:
 To run this project, install it locally using yarn:
 
 ```
-yarn add && yarn start
+yarn install && yarn start
 ```
 
 ## Author
