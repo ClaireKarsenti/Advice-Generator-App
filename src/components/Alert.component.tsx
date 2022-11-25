@@ -1,11 +1,7 @@
 import { FC } from 'react';
+import { AlertType } from '../App';
 
 import { Container } from '../assets/styles/Alert.style';
-
-interface AlertType {
-  type: string;
-  msg: string;
-}
 
 const Alert: FC<AlertType> = ({ type, msg}) => {
   return (

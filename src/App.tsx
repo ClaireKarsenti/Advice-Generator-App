@@ -4,7 +4,7 @@ import { GlobalStyle } from '../src/assets/styles/Global.style';
 import Card from './components/Card.component';
 import Footer from './components/Footer.component';
 
-interface AlertType {
+export interface AlertType {
   show: boolean;
   msg: string;
   type: string;
@@ -23,7 +23,7 @@ function App() {
     type: '',
   });
 
-  const adviceUrl = 'https://api.adviceslip.com/advice';
+  const adviceUrl: string = 'https://api.adviceslip.com/advice';
 
   const asyncTimeout = (ms: number) => {
     return new Promise((resolve) => {
@@ -31,7 +31,7 @@ function App() {
     });
   };
 
-  const getAdvice = async () => {
+  const getAdvice: () => void = async () => {
     try {
       setLoading(true);
       await asyncTimeout(1000);
@@ -52,7 +52,7 @@ function App() {
   };
 
   //Display an alert if the advice is not available
-  const showAlert = (show = false, type = '', msg = '') => {
+  const showAlert: any = (show = false, type = '', msg = '') => {
     setAlert({ show, type, msg });
   };
 
