@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   border-radius: 0.7rem;
-  padding: 3em 1.5em;
+  padding: 3em 1em;
   min-height: 21em;
-  width: 22em;
+  width: 23em;
   background: var(--dark-grayish-blue);
   display: flex;
   flex-direction: column;
