@@ -9,7 +9,7 @@ Frontend Mentor challenges help me improve my coding skills by building realisti
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
-    - [Models & my works](#models--my-works)
+    - [Models \& my works](#models--my-works)
       - [Desktop version](#desktop-version)
       - [Mobile version](#mobile-version)
       - [Active states version](#active-states-version)
@@ -35,33 +35,21 @@ Users should be able to:
 
 #### Desktop version
 
-Model:
-
-![desktop version](./src/assets/design/desktop-design.jpg)
-
-My work:
-
-![desktop version](./src/assets/my-work/my-work-desktop-version.png)
+| Model   | ![desktop version](./src/assets/design/desktop-design.jpg)           |
+| ------- | -------------------------------------------------------------------- |
+| My work | ![desktop version](./src/assets/my-work/my-work-desktop-version.png) |
 
 #### Mobile version
 
-Model:
-
-![mobile version](./src/assets/design/mobile-design.jpg)
-
-My work:
-
-![mobile version](./src/assets/my-work/my-work-mobile-version.png)
+| Model                                                    | My work                                                            |
+| -------------------------------------------------------- | ------------------------------------------------------------------ |
+| ![mobile version](./src/assets/design/mobile-design.jpg) | ![mobile version](./src/assets/my-work/my-work-mobile-version.png) |
 
 #### Active states version
 
-Model:
-
-![Active states version](./src/assets/design/active-states.jpg)
-
-My work:
-
-![Active states version](./src/assets/my-work/my-work-active-states-version.png)
+| Model   | ![Active states version](./src/assets/design/active-states.jpg)                  |
+| ------- | -------------------------------------------------------------------------------- |
+| My work | ![Active states version](./src/assets/my-work/my-work-active-states-version.png) |
 
 #### Demo video
 
@@ -69,8 +57,8 @@ https://user-images.githubusercontent.com/102292921/199338784-1e0543c1-3edf-47cd
 
 ### Links
 
-- Solution URL: [Code on GitHub](https://github.com/ClaireKarsenti/Frontend-Mentor-Solution-Advice-Generator-App)
-- Live Site URL: [GitHub Pages Live URL](https://clairekarsenti.github.io/Frontend-Mentor-Solution-Advice-Generator-App/)
+- Solution URL: [Code on GitHub](https://github.com/ClaireKarsenti/Advice-Generator-App)
+- Live Site URL: [GitHub Pages Live URL](https://clairekarsenti.github.io/Advice-Generator-App/)
 
 ## My process
 
@@ -174,4 +162,4 @@ yarn install && yarn start
 ## Author
 
 - Linkedin - [Claire Karsenti](https://www.linkedin.com/in/claire-karsenti/)
-- Frontend Mentor - [@ClaireKarsent](https://www.frontendmentor.io/profile/ClaireKarsenti)
+- Frontend Mentor - [@ClaireKarsenti](https://www.frontendmentor.io/profile/ClaireKarsenti)
