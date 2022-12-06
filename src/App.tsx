@@ -25,8 +25,8 @@ function App() {
 
   const adviceUrl: string = 'https://api.adviceslip.com/advice';
 
-  const asyncTimeout = (ms: number) => {
-    return new Promise((resolve) => {
+  const asyncTimeout = (ms: number): Promise<number> => {
+    return new Promise<number>((resolve) => {
       setTimeout(resolve, ms);
     });
   };

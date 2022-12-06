@@ -28,7 +28,7 @@ const Card: FC<CardType> = ({
   return (
     <Container>
       {error ? (
-        alert.show && <Alert {...alert} showAlert={showAlert} />
+        alert?.show && <Alert {...alert} showAlert={showAlert} />
       ) : (
         <>
           <span>Advice #{adviceNumber}</span>
